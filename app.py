@@ -1,10 +1,10 @@
 import streamlit as st
 import numpy as np
 import pickle
+import pandas as pd
 
 # ⚡ set_page_config must be here FIRST
 st.set_page_config(page_title="Ad Click Prediction", page_icon="📢")
-
 # Load model
 @st.cache_resource
 def load_model():
@@ -19,6 +19,8 @@ if 'submitted' not in st.session_state:
 
 if not st.session_state.submitted:
     st.title("📢 Ad Click Prediction Form")
+    st.markdown("<h4 style='text-align: center; color: gray;'>DSM Assignment By Group-07</h4>", unsafe_allow_html=True)
+
 
     with st.form("ad_form"):
         daily_time_spent = st.number_input('Daily Time Spent on Site', min_value=0.0, max_value=500.0, value=100.0)
