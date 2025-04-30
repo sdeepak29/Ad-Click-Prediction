@@ -19,7 +19,7 @@ if 'submitted' not in st.session_state:
 
 if not st.session_state.submitted:
     st.title("📢 Ad Click Prediction Form")
-    st.markdown("<h4 style='text-align: center; color: gray;'>DSM Assignment By Group-07</h4>", unsafe_allow_html=True)
+    st.markdown("<h4 style='text-align: center; color: gray;'>AI&ML for Water Resources Assignment</h4>", unsafe_allow_html=True)
 
 
     with st.form("ad_form"):
